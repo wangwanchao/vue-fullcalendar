@@ -52,7 +52,7 @@
             <li v-for="event in selectDay.events"
               v-show="event.isShow" class="body-item"
               @click="eventClick(event,$event)">
-              {{event.title}}
+              {{showMoreItem(event)}}
             </li>
           </ul>
         </div>
@@ -67,6 +67,14 @@
 </template>
 <script type="text/babel">
   import dateFunc from './dateFunc'
+
+  var formatTime = (date) => {  
+    var hour = date.getHours();  
+    hour = hour < 10 ? ('0' + hour) : hour; 
+    var minute = date.getMinutes();  
+    minute = minute < 10 ? ('0' + minute) : minute; 
+    return hour +':'+minute;  
+  }
 
   export default {
     props : {
@@ -116,13 +124,18 @@
         let st = new Date(event.start)
 
         if (index == 0 || st.toDateString() == date.toDateString()) {
-          return event.title
+          return formatTime(st) +' '+ event.title
         }
         return '　'
       },
+      showMoreItem (event) {
+        let st = new Date(event.start)
+        
+        return formatTime(st) +' '+ event.title
+      },
       moreTitle (date) {
         let dt = new Date(date)
-        return this.weekNames[dt.getDay()] + ', ' + this.monthNames[dt.getMonth()] + dt.getDate()
+        return this.weekNames[dt.getDay()-1] + ', ' + this.monthNames[dt.getMonth()] + dt.getDate()
       },
       classNames (cssClass) {
         if(!cssClass) return ''

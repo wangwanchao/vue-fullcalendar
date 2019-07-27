@@ -1,6 +1,6 @@
 /*!
  * vue-fullcalendar v1.0.9
- * (c) 2017 Sunny Wang <sunnywang0104@163.com> 
+ * (c) 2019 Sunny Wang <sunnywang0104@163.com> 
  * @license MIT
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -57,7 +57,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -71,56 +71,47 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = fc;
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-
+	
 	/* styles */
 	__webpack_require__(2)
 
-	/* script */
-	__vue_exports__ = __webpack_require__(6)
-
-	/* template */
-	var __vue_template__ = __webpack_require__(19)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/SunnyWang/code/vue-fullcalendar/src/fullCalendar.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	var Component = __webpack_require__(6)(
+	  /* script */
+	  __webpack_require__(7),
+	  /* template */
+	  __webpack_require__(20),
+	  /* scopeId */
+	  null,
+	  /* cssModules */
+	  null
+	)
+	Component.options.__file = "/Users/wanchaowang/VueProjects/vue-fullcalendar-wang/src/fullCalendar.vue"
+	if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+	if (Component.options.functional) {console.error("[vue-loader] fullCalendar.vue: functional components are not supported with templates, they should use render functions.")}
 
 	/* hot reload */
 	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-3e333dbe", __vue_options__)
+	    hotAPI.createRecord("data-v-45386ff9", Component.options)
 	  } else {
-	    hotAPI.reload("data-v-3e333dbe", __vue_options__)
+	    hotAPI.reload("data-v-45386ff9", Component.options)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] fullCalendar.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 
-	module.exports = __vue_exports__
+	module.exports = Component.exports
 
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
@@ -134,8 +125,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../node_modules/.npminstall/vue-loader/10.0.2/vue-loader/lib/style-rewriter.js?id=data-v-3e333dbe!./../node_modules/.npminstall/sass-loader/3.2.3/sass-loader/index.js!./../node_modules/.npminstall/vue-loader/10.0.2/vue-loader/lib/selector.js?type=styles&index=0!./fullCalendar.vue", function() {
-				var newContent = require("!!./../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../node_modules/.npminstall/vue-loader/10.0.2/vue-loader/lib/style-rewriter.js?id=data-v-3e333dbe!./../node_modules/.npminstall/sass-loader/3.2.3/sass-loader/index.js!./../node_modules/.npminstall/vue-loader/10.0.2/vue-loader/lib/selector.js?type=styles&index=0!./fullCalendar.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-45386ff9!../node_modules/sass-loader/index.js!../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./fullCalendar.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-45386ff9!../node_modules/sass-loader/index.js!../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./fullCalendar.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -144,9 +135,9 @@ return /******/ (function(modules) { // webpackBootstrap
 		module.hot.dispose(function() { update(); });
 	}
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
@@ -158,9 +149,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	// exports
 
 
-/***/ },
+/***/ }),
 /* 4 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	/*
 		MIT License http://www.opensource.org/licenses/mit-license.php
@@ -214,9 +205,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ },
+/***/ }),
 /* 5 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	/*
 		MIT License http://www.opensource.org/licenses/mit-license.php
@@ -231,7 +222,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			};
 		},
 		isOldIE = memoize(function() {
-			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+			return /msie [6-9]\b/.test(self.navigator.userAgent.toLowerCase());
 		}),
 		getHeadElement = memoize(function () {
 			return document.head || document.getElementsByTagName("head")[0];
@@ -466,9 +457,62 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 
-/***/ },
+/***/ }),
 /* 6 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
+
+	module.exports = function normalizeComponent (
+	  rawScriptExports,
+	  compiledTemplate,
+	  scopeId,
+	  cssModules
+	) {
+	  var esModule
+	  var scriptExports = rawScriptExports = rawScriptExports || {}
+
+	  // ES6 modules interop
+	  var type = typeof rawScriptExports.default
+	  if (type === 'object' || type === 'function') {
+	    esModule = rawScriptExports
+	    scriptExports = rawScriptExports.default
+	  }
+
+	  // Vue.extend constructor export interop
+	  var options = typeof scriptExports === 'function'
+	    ? scriptExports.options
+	    : scriptExports
+
+	  // render functions
+	  if (compiledTemplate) {
+	    options.render = compiledTemplate.render
+	    options.staticRenderFns = compiledTemplate.staticRenderFns
+	  }
+
+	  // scopedId
+	  if (scopeId) {
+	    options._scopeId = scopeId
+	  }
+
+	  // inject cssModules
+	  if (cssModules) {
+	    var computed = options.computed || (options.computed = {})
+	    Object.keys(cssModules).forEach(function (key) {
+	      var module = cssModules[key]
+	      computed[key] = function () { return module }
+	    })
+	  }
+
+	  return {
+	    esModule: esModule,
+	    exports: scriptExports,
+	    options: options
+	  }
+	}
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -476,7 +520,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _langSets = __webpack_require__(7);
+	var _langSets = __webpack_require__(8);
 
 	var _langSets2 = _interopRequireDefault(_langSets);
 
@@ -545,8 +589,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  },
 	  components: {
-	    'fc-body': __webpack_require__(8),
-	    'fc-header': __webpack_require__(14)
+	    'fc-body': __webpack_require__(9),
+	    'fc-header': __webpack_require__(15)
 	  }
 	}; //
 	//
@@ -580,9 +624,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	//
 	//
 
-/***/ },
-/* 7 */
-/***/ function(module, exports) {
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -607,61 +651,52 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	};
 
-/***/ },
-/* 8 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
 
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-
+	
 	/* styles */
-	__webpack_require__(9)
+	__webpack_require__(10)
 
-	/* script */
-	__vue_exports__ = __webpack_require__(11)
-
-	/* template */
-	var __vue_template__ = __webpack_require__(13)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/SunnyWang/code/vue-fullcalendar/src/components/body.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	var Component = __webpack_require__(6)(
+	  /* script */
+	  __webpack_require__(12),
+	  /* template */
+	  __webpack_require__(14),
+	  /* scopeId */
+	  null,
+	  /* cssModules */
+	  null
+	)
+	Component.options.__file = "/Users/wanchaowang/VueProjects/vue-fullcalendar-wang/src/components/body.vue"
+	if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+	if (Component.options.functional) {console.error("[vue-loader] body.vue: functional components are not supported with templates, they should use render functions.")}
 
 	/* hot reload */
 	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-734054ba", __vue_options__)
+	    hotAPI.createRecord("data-v-68f0b49f", Component.options)
 	  } else {
-	    hotAPI.reload("data-v-734054ba", __vue_options__)
+	    hotAPI.reload("data-v-68f0b49f", Component.options)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] body.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 
-	module.exports = __vue_exports__
+	module.exports = Component.exports
 
 
-/***/ },
-/* 9 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(10);
+	var content = __webpack_require__(11);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -670,8 +705,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.2/vue-loader/lib/style-rewriter.js?id=data-v-734054ba!./../../node_modules/.npminstall/sass-loader/3.2.3/sass-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.2/vue-loader/lib/selector.js?type=styles&index=0!./body.vue", function() {
-				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.2/vue-loader/lib/style-rewriter.js?id=data-v-734054ba!./../../node_modules/.npminstall/sass-loader/3.2.3/sass-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.2/vue-loader/lib/selector.js?type=styles&index=0!./body.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-68f0b49f!../../node_modules/sass-loader/index.js!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./body.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-68f0b49f!../../node_modules/sass-loader/index.js!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./body.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -680,9 +715,9 @@ return /******/ (function(modules) { // webpackBootstrap
 		module.hot.dispose(function() { update(); });
 	}
 
-/***/ },
-/* 10 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
@@ -694,9 +729,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	// exports
 
 
-/***/ },
-/* 11 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -704,11 +739,85 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _dateFunc = __webpack_require__(12);
+	var _dateFunc = __webpack_require__(13);
 
 	var _dateFunc2 = _interopRequireDefault(_dateFunc);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var formatTime = function formatTime(date) {
+	  var hour = date.getHours();
+	  hour = hour < 10 ? '0' + hour : hour;
+	  var minute = date.getMinutes();
+	  minute = minute < 10 ? '0' + minute : minute;
+	  return hour + ':' + minute;
+	}; //
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
 
 	exports.default = {
 	  props: {
@@ -759,13 +868,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var st = new Date(event.start);
 
 	      if (index == 0 || st.toDateString() == date.toDateString()) {
-	        return event.title;
+	        return formatTime(st) + ' ' + event.title;
 	      }
 	      return '　';
 	    },
+	    showMoreItem: function showMoreItem(event) {
+	      var st = new Date(event.start);
+
+	      return formatTime(st) + ' ' + event.title;
+	    },
 	    moreTitle: function moreTitle(date) {
 	      var dt = new Date(date);
-	      return this.weekNames[dt.getDay()] + ', ' + this.monthNames[dt.getMonth()] + dt.getDate();
+	      return this.weekNames[dt.getDay() - 1] + ', ' + this.monthNames[dt.getMonth()] + dt.getDate();
 	    },
 	    classNames: function classNames(cssClass) {
 	      if (!cssClass) return '';
@@ -893,77 +1007,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.$emit('eventclick', event, jsEvent, pos);
 	    }
 	  }
-	}; //
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
+	};
 
-/***/ },
-/* 12 */
-/***/ function(module, exports) {
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -1035,11 +1083,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = dateFunc;
 
-/***/ },
-/* 13 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "full-calendar-body"
 	  }, [_c('div', {
@@ -1048,7 +1096,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return _c('strong', {
 	      staticClass: "week"
 	    }, [_vm._v(_vm._s(week))])
-	  })), _vm._v(" "), _c('div', {
+	  }), 0), _vm._v(" "), _c('div', {
 	    ref: "dates",
 	    staticClass: "dates"
 	  }, [_c('div', {
@@ -1066,8 +1114,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }, [_c('p', {
 	        staticClass: "day-number"
 	      }, [_vm._v(_vm._s(day.monthDay))])])
-	    }))
-	  })), _vm._v(" "), _c('div', {
+	    }), 0)
+	  }), 0), _vm._v(" "), _c('div', {
 	    staticClass: "dates-events"
 	  }, _vm._l((_vm.currentDates), function(week) {
 	    return _c('div', {
@@ -1085,7 +1133,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        on: {
 	          "click": function($event) {
 	            $event.stopPropagation();
-	            _vm.dayClick(day.date, $event)
+	            return _vm.dayClick(day.date, $event)
 	          }
 	        }
 	      }, [_c('p', {
@@ -1108,7 +1156,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          }],
 	          on: {
 	            "click": function($event) {
-	              _vm.eventClick(event, $event)
+	              return _vm.eventClick(event, $event)
 	            }
 	          }
 	        }, [_vm._v("\n              " + _vm._s(_vm.isBegin(event, day.date, day.weekDay)) + "\n            ")])
@@ -1117,12 +1165,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	        on: {
 	          "click": function($event) {
 	            $event.stopPropagation();
-	            _vm.selectThisDay(day, $event)
+	            return _vm.selectThisDay(day, $event)
 	          }
 	        }
 	      }, [_vm._v("\n              + " + _vm._s(day.events[day.events.length - 1].cellIndex - _vm.eventLimit) + " more\n            ")]) : _vm._e()], 2)])
-	    }))
-	  })), _vm._v(" "), _c('div', {
+	    }), 0)
+	  }), 0), _vm._v(" "), _c('div', {
 	    directives: [{
 	      name: "show",
 	      rawName: "v-show",
@@ -1161,75 +1209,66 @@ return /******/ (function(modules) { // webpackBootstrap
 	      staticClass: "body-item",
 	      on: {
 	        "click": function($event) {
-	          _vm.eventClick(event, $event)
+	          return _vm.eventClick(event, $event)
 	        }
 	      }
-	    }, [_vm._v("\n            " + _vm._s(event.title) + "\n          ")])
-	  }))])]), _vm._v(" "), _vm._t("body-card")], 2)])
+	    }, [_vm._v("\n            " + _vm._s(_vm.showMoreItem(event)) + "\n          ")])
+	  }), 0)])]), _vm._v(" "), _vm._t("body-card")], 2)])
 	},staticRenderFns: []}
 	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-734054ba", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-68f0b49f", module.exports)
 	  }
 	}
 
-/***/ },
-/* 14 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
 
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-
+	
 	/* styles */
-	__webpack_require__(15)
+	__webpack_require__(16)
 
-	/* script */
-	__vue_exports__ = __webpack_require__(17)
-
-	/* template */
-	var __vue_template__ = __webpack_require__(18)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/SunnyWang/code/vue-fullcalendar/src/components/header.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	var Component = __webpack_require__(6)(
+	  /* script */
+	  __webpack_require__(18),
+	  /* template */
+	  __webpack_require__(19),
+	  /* scopeId */
+	  null,
+	  /* cssModules */
+	  null
+	)
+	Component.options.__file = "/Users/wanchaowang/VueProjects/vue-fullcalendar-wang/src/components/header.vue"
+	if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+	if (Component.options.functional) {console.error("[vue-loader] header.vue: functional components are not supported with templates, they should use render functions.")}
 
 	/* hot reload */
 	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-62863025", __vue_options__)
+	    hotAPI.createRecord("data-v-a4c3aa6c", Component.options)
 	  } else {
-	    hotAPI.reload("data-v-62863025", __vue_options__)
+	    hotAPI.reload("data-v-a4c3aa6c", Component.options)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] header.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 
-	module.exports = __vue_exports__
+	module.exports = Component.exports
 
 
-/***/ },
-/* 15 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(16);
+	var content = __webpack_require__(17);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -1238,8 +1277,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.2/vue-loader/lib/style-rewriter.js?id=data-v-62863025!./../../node_modules/.npminstall/sass-loader/3.2.3/sass-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.2/vue-loader/lib/selector.js?type=styles&index=0!./header.vue", function() {
-				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.2/vue-loader/lib/style-rewriter.js?id=data-v-62863025!./../../node_modules/.npminstall/sass-loader/3.2.3/sass-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.2/vue-loader/lib/selector.js?type=styles&index=0!./header.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-a4c3aa6c!../../node_modules/sass-loader/index.js!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./header.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-a4c3aa6c!../../node_modules/sass-loader/index.js!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./header.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -1248,9 +1287,9 @@ return /******/ (function(modules) { // webpackBootstrap
 		module.hot.dispose(function() { update(); });
 	}
 
-/***/ },
-/* 16 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
@@ -1262,9 +1301,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	// exports
 
 
-/***/ },
-/* 17 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -1272,7 +1311,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _dateFunc = __webpack_require__(12);
+	var _dateFunc = __webpack_require__(13);
 
 	var _dateFunc2 = _interopRequireDefault(_dateFunc);
 
@@ -1357,11 +1396,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	//
 	//
 
-/***/ },
-/* 18 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "full-calendar-header"
 	  }, [_c('div', {
@@ -1373,7 +1412,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    on: {
 	      "click": function($event) {
 	        $event.stopPropagation();
-	        _vm.goPrev($event)
+	        return _vm.goPrev($event)
 	      }
 	    }
 	  }, [_vm._v(_vm._s(_vm.leftArrow))]), _vm._v(" "), _c('span', {
@@ -1383,7 +1422,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    on: {
 	      "click": function($event) {
 	        $event.stopPropagation();
-	        _vm.goNext($event)
+	        return _vm.goNext($event)
 	      }
 	    }
 	  }, [_vm._v(_vm._s(_vm.rightArrow))])]), _vm._v(" "), _c('div', {
@@ -1394,15 +1433,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-62863025", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-a4c3aa6c", module.exports)
 	  }
 	}
 
-/***/ },
-/* 19 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "comp-full-calendar"
 	  }, [_c('fc-header', {
@@ -1416,8 +1455,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "change": _vm.emitChangeMonth
 	    }
 	  }, [_c('div', {
+	    attrs: {
+	      "slot": "header-left"
+	    },
 	    slot: "header-left"
 	  }, [_vm._t("fc-header-left")], 2), _vm._v(" "), _c('div', {
+	    attrs: {
+	      "slot": "header-right"
+	    },
 	    slot: "header-right"
 	  }, [_vm._t("fc-header-right")], 2)]), _vm._v(" "), _c('fc-body', {
 	    attrs: {
@@ -1433,6 +1478,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "moreclick": _vm.emitMoreClick
 	    }
 	  }, [_c('div', {
+	    attrs: {
+	      "slot": "body-card"
+	    },
 	    slot: "body-card"
 	  }, [_vm._t("fc-body-card")], 2)])], 1)
 	},staticRenderFns: []}
@@ -1440,11 +1488,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3e333dbe", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-45386ff9", module.exports)
 	  }
 	}
 
-/***/ }
+/***/ })
 /******/ ])
 });
 ;
